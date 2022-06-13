@@ -1,0 +1,15 @@
+type AnimeGenre {
+    id: ID
+    title: String
+}
+
+type Anime {
+    id: ID
+    title: String
+    genre: AnimeGenre
+}
+
+type Query {
+    getAnimeGenres: [AnimeGenre]
+    getAnime: [Anime]
+}
